@@ -33,6 +33,7 @@ Grafana: http://localhost:3000/
 FastAPI: http://localhost:8000/
 
 
-Students:
+
+Student:
 
  - Mehdi Qaissouni
