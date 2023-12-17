@@ -1,0 +1,53 @@
+version: "3.8"  # Utilisation de Docker Compose version 3.8
+
+services:
+  # Service App
+  app:
+    build:  # Configuration de la construction de l'image du conteneur
+      context: ./app  # Contexte de build (dossier contenant le Dockerfile)
+    restart: unless-stopped  # Politique de redémarrage
+    container_name: app  # Nom du conteneur
+    ports:
+      - "8000:8000"  # Mapping des ports (host:conteneur)
+    networks:
+      example-network:
+        ipv4_address: 172.16.238.10  # Adresse IP statique dans le réseau
+
+  # Service Prometheus
+  prometheus:
+    image: prom/prometheus:latest  # Image Docker de Prometheus
+    restart: unless-stopped  # Politique de redémarrage
+    container_name: prometheus  # Nom du conteneur
+    ports:
+      - "9090:9090"  # Mapping des ports
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml  # Volume pour la configuration de Prometheus
+    networks:
+      example-network:
+        ipv4_address: 172.16.238.11  # Adresse IP statique
+
+  # Service Grafana
+  grafana:
+    image: grafana/grafana  # Image Docker de Grafana
+    container_name: grafana  # Nom du conteneur
+    restart: unless-stopped  # Politique de redémarrage
+    depends_on:
+      - prometheus  # Dépendance envers le service Prometheus
+    ports:
+      - "3000:3000"  # Mapping des ports
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning  # Volume pour la configuration de Grafana
+    env_file:
+      - ./grafana/config.monitoring  # Fichier d'environnement pour Grafana
+    networks:
+      example-network:
+        ipv4_address: 172.16.238.12  # Adresse IP statique
+
+networks:
+  example-network:  # Définition du réseau personnalisé
+    name: example-network
+    driver: bridge  # Utilisation du driver bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.238.0/24  # Configuration du sous-réseau
