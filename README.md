@@ -18,7 +18,7 @@ git clone https://github.com/qsnmehdi/MLOPS
 
 
 
-##Usage
+## Usage
 
 ```bash
 docker-compose up
@@ -27,7 +27,9 @@ docker-compose up
 Now you have access to those three containers and their respective ports:
 
 Prometheus: http://localhost:9090/
+
 Grafana: http://localhost:3000/
+
 FastAPI: http://localhost:8000/
 
 Students:
