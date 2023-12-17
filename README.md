@@ -6,7 +6,9 @@ This project presents a complete MLOps solution for binary classification of auc
 
 There are only two prerequisites:
 
- -Docker
- -Docker-compose
+ - Docker
+ 
+ - Docker-compose
+ 
 Having both, you'll need to clone the repository:
 
