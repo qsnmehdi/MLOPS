@@ -22,6 +22,7 @@ git clone https://github.com/qsnmehdi/MLOPS
 
 ```bash
 docker-compose up
+```
 
 Now you have access to those three containers and their respective ports:
 
