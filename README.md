@@ -12,5 +12,6 @@ There are only two prerequisites:
 
 Having both, you'll need to clone the repository:
 
-```git clone https://github.com/qsnmehdi/MLOPS
+```bash
+git clone https://github.com/votreusername/votrerepo.git
 
