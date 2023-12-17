@@ -9,7 +9,8 @@ There are only two prerequisites:
  - Docker
  
  - Docker-compose
- 
-Having both, you'll need to clone the repository:
 
-'git clone  https://github.com/qsnmehdi/MLOPS'
+Having both, you'll need to clone the repository:w
+
+``` git clone https://github.com/qsnmehdi/MLOPS
+
