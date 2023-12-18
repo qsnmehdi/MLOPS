@@ -6,23 +6,10 @@ This project entails conducting exploratory data analysis and selecting appropri
 
 Post-deployment monitoring of the model is accomplished through Grafana and Prometheus.
 
-## Installation
-
-There are only two prerequisites:
-
- - Docker
- 
- - Docker-compose
-
-Having both, you'll need to clone the repository:
-
-```bash
-git clone https://github.com/qsnmehdi/MLOPS
-```
 
 
 
 
-Student:
+## Student:
 
  - Mehdi Qaissouni
