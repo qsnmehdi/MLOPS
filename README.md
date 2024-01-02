@@ -4,7 +4,7 @@ This project presents a complete MLOps solution for binary classification of auc
 
 This project entails conducting exploratory data analysis and selecting appropriate models. The deployment of the chosen model is executed utilizing FastAPI and Docker.
 
-Post-deployment monitoring of the model is accomplished through Grafana and Prometheus.
+Post-deployment monitoring of the model is accomplished through Prometheus.
 
 
 
