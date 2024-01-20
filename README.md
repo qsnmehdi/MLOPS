@@ -9,6 +9,11 @@ Post-deployment monitoring of the model is accomplished through Prometheus.
 ![tracking CPU ressources](https://github.com/qsnmehdi/MLOPS/assets/115088262/24199c0b-9718-4500-b78b-75512dd5fd01)
 
 
+![Memory usage   HTTP request duration count](https://github.com/qsnmehdi/MLOPS/assets/115088262/9c8c89be-8852-4397-92a0-b1cbb5ade99d)
+
+
+![HTTP requests](https://github.com/qsnmehdi/MLOPS/assets/115088262/ce3bb56d-fe24-4052-8e6c-273f51f6afa8)
+
 
 
 ## Student:
