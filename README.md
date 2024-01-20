@@ -6,12 +6,16 @@ This project entails conducting exploratory data analysis and selecting appropri
 
 Post-deployment monitoring of the model is accomplished through Prometheus and grafana.
 
-![tracking CPU ressources](https://github.com/qsnmehdi/MLOPS/assets/115088262/24199c0b-9718-4500-b78b-75512dd5fd01)
+Here are some examples:
 
 
+## Memory usage & HTTP request duration count:
 ![Memory usage   HTTP request duration count](https://github.com/qsnmehdi/MLOPS/assets/115088262/9c8c89be-8852-4397-92a0-b1cbb5ade99d)
 
+## Tracking CPU ressources & other metrics:
+![tracking CPU ressources](https://github.com/qsnmehdi/MLOPS/assets/115088262/24199c0b-9718-4500-b78b-75512dd5fd01)
 
+## HTTP requests:
 ![HTTP requests](https://github.com/qsnmehdi/MLOPS/assets/115088262/ce3bb56d-fe24-4052-8e6c-273f51f6afa8)
 
 
