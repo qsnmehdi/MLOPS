@@ -10,3 +10,4 @@ imblearn
 tensorflow
 tqdm
 jupyter
+fastapi
