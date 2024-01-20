@@ -6,6 +6,7 @@ This project entails conducting exploratory data analysis and selecting appropri
 
 Post-deployment monitoring of the model is accomplished through Prometheus.
 
+![tracking CPU ressources](https://github.com/qsnmehdi/MLOPS/assets/115088262/24199c0b-9718-4500-b78b-75512dd5fd01)
 
 
 
